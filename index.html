@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reciclagem de Eletrônicos e Reaproveitamento Criativo</title>
+    <link rel="stylesheet" href="css/styles_index.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="praticas.html">Projetos de Reaproveitamento</a></li>
+                <li><a href="doacoes.html">Doações e Oficinas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+    
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
+    <section class="hero">
+        <h1>Reciclagem de Eletrônicos: Dando Nova Vida ao Que Já Foi Usado</h1>
+        <p>Junte-se a nós na missão de transformar resíduos eletrônicos em oportunidades para quem precisa!</p>
+    </section>
+
+    <section class="intro">
+        <h2>Por que Reciclar Eletrônicos?</h2>
+        <p>A reciclagem de eletrônicos vai muito além de apenas descartar aparelhos antigos. É uma forma de reaproveitar componentes, reduzir o lixo eletrônico e ainda ajudar comunidades carentes. Ao reutilizar peças, evitamos o descarte inadequado e criamos novas possibilidades.</p>
+    </section>
+
+    <section class="content">
+        <div class="card">
+            <img src="imgs/computador_reciclado.jpg" alt="Montagem de Computadores" class="card-img">
+            <div class="card-text">
+                <h3>Montagem de Computadores para Doação</h3>
+                <p>Reaproveitamos peças de computadores antigos para montar novos equipamentos funcionais que são doados a escolas, ONGs e famílias de baixa renda, promovendo inclusão digital e oportunidades educacionais.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgs/arcade_montado.jpg" alt="Arcades e Projetos Criativos" class="card-img">
+            <div class="card-text">
+                <h3>Construção de Arcades e Projetos Criativos</h3>
+                <p>Componentes eletrônicos que não podem ser usados em PCs ganham nova vida em projetos como arcades retrô, estações multimídia e outras iniciativas criativas que combinam tecnologia e sustentabilidade.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgs/oficina_eletronicos.jpg" alt="Oficinas Educativas" class="card-img">
+            <div class="card-text">
+                <h3>Oficinas e Educação Ambiental</h3>
+                <p>Oferecemos oficinas para ensinar como desmontar, reaproveitar e montar eletrônicos, incentivando o aprendizado prático e a consciência sobre o impacto ambiental do lixo eletrônico.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Reciclagem de Eletrônicos e Reaproveitamento Criativo</p>
+    </footer>
+</body>
+</html>

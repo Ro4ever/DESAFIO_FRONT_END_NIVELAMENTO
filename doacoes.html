@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações e Oficinas</title>
+    <link rel="stylesheet" href="css/styles_doacoes.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="praticas.html">Projetos de Reaproveitamento</a></li>
+                <li><a href="doacoes.html" class="active">Doações e Oficinas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+    
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
+    <section class="hero-praticas">
+        <h1>Doações e Oficinas</h1>
+        <p>Contribua com seu eletrônico usado e ajude a dar nova vida a ele. Confira também onde estão acontecendo oficinas de reaproveitamento!</p>
+    </section>
+
+    <!-- Contêiner para formulário e lista de oficinas lado a lado -->
+    <div class="form-oficinas-container">
+
+        <!-- Formulário de Doação -->
+        <section class="form-doacao">
+            <h2>Formulário para Doação de Eletrônicos</h2>
+            <p>Preencha o formulário abaixo para realizar sua doação. Entraremos em contato para agendar a coleta.</p>
+            <form onsubmit="mostrarPopup(event)">
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <label for="endereco">Endereço para Coleta:</label><br>
+                <input type="text" id="endereco" name="endereco" required><br><br>
+
+                <label for="tipo-eletronico">Tipo de Eletrônico:</label><br>
+                <select id="tipo-eletronico" name="tipo-eletronico" required>
+                    <option value="Computador">Computador</option>
+                    <option value="Notebook">Notebook</option>
+                    <option value="Celular">Celular</option>
+                    <option value="Tablet">Tablet</option>
+                    <option value="Outros">Outros</option>
+                </select><br><br>
+
+                <label for="descricao">Descrição do Estado do Equipamento:</label><br>
+                <textarea id="descricao" name="descricao" rows="4" cols="50" placeholder="Informe se o equipamento está funcionando, se tem defeitos, etc." required></textarea><br><br>
+
+                <input type="submit" value="Enviar Doação">
+            </form>
+        </section>
+
+        <!-- Lista de Oficinas -->
+        <section class="locais-oficinas">
+            <h2>Locais com Oficinas de Reaproveitamento</h2>
+            <p>Encontre a oficina mais próxima e participe para aprender mais sobre o reaproveitamento de eletrônicos.</p>
+            <ul>
+                <li><strong>Oficina Recicla Fácil</strong> – Rua das Acácias, 101 - São Paulo, SP</li>
+                <li><strong>Centro Verde Vida</strong> – Av. Atlântica, 789 - Rio de Janeiro, RJ</li>
+                <li><strong>Eco Reparo Tech</strong> – Rua das Palmeiras, 222 - Belo Horizonte, MG</li>
+                <li><strong>Lab Sustentável Inova</strong> – Av. das Flores, 456 - Curitiba, PR</li>
+                <li><strong>Espaço Renovar</strong> – Rua Aurora, 654 - Porto Alegre, RS</li>
+                <li><strong>Oficina Reuso Criativo</strong> – Rua Harmonia, 890 - Campinas, SP</li>
+                <li><strong>Recicla Mais Brasil</strong> – Av. Paulista, 350 - São Paulo, SP</li>
+                <li><strong>Estação Verde Tech</strong> – Rua Brasil, 400 - Salvador, BA</li>
+                <li><strong>Hub Sustentável</strong> – Av. Central, 120 - Florianópolis, SC</li>
+                <li><strong>Ateliê de Reaproveitamento</strong> – Rua XV de Novembro, 789 - Recife, PE</li>
+                <li><strong>Laboratório Eco Inova</strong> – Rua Verdejante, 321 - Fortaleza, CE</li>
+                <li><strong>ReciclaTech Lab</strong> – Av. dos Jacarandás, 150 - Brasília, DF</li>
+                <li><strong>Espaço Eco Criativo</strong> – Rua dos Pinhais, 275 - Goiânia, GO</li>
+                <li><strong>Oficina Viva Recicla</strong> – Rua São João, 800 - Vitória, ES</li>
+                <li><strong>Centro Reparo Verde</strong> – Av. Amazonas, 555 - Manaus, AM</li>
+                <li><strong>Recicla Fácil Tech</strong> – Rua dos Lírios, 170 - João Pessoa, PB</li>
+                <li><strong>Oficina Verde Sustentável</strong> – Av. Bento Gonçalves, 230 - Porto Alegre, RS</li>
+                <li><strong>EcoLab Criativo</strong> – Rua das Andorinhas, 678 - Maceió, AL</li>
+                <li><strong>Recicla Conserta</strong> – Av. Marechal, 999 - Natal, RN</li>
+                <li><strong>Estação Reuso Tech</strong> – Rua do Sol, 112 - Campo Grande, MS</li>
+                
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Doações e Oficinas de Reaproveitamento</p>
+    </footer>
+
+    <!-- Script para o popup -->
+    <script>
+        function mostrarPopup(event) {
+            event.preventDefault(); // Impede o envio real do formulário
+
+            // Exibe o popup de confirmação
+            alert("Obrigado! Sua doação foi enviada com sucesso.");
+
+            // Limpa os campos do formulário após o envio
+            document.querySelector('form').reset();
+        }
+    </script>
+</body>
+</html>

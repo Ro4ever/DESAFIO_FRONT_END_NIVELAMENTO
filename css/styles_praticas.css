@@ -1,0 +1,301 @@
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c0b28b56;
+    color: #000000;
+    padding-top: 70px; /* Espaço para a nav fixa */
+}
+
+/* Header e Navegação Fixa */
+header {
+    background-color: #2e7d32;
+    padding: 0; /* Removido o padding para evitar duplicidade */
+    text-align: center;
+}
+
+/* Estilos Gerais da Nav */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #2e7d32;
+    z-index: 1000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover e Ativo */
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #1e5a23;
+}
+
+/* Botão do Menu Hambúrguer */
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero-praticas {
+    background-color: #91df95;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #fff; /* Adicionado para melhor contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Lista de práticas */
+.praticas-list {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.pratica-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 30px;
+    display: flex; /* Adiciona o Flexbox */
+    align-items: center; /* Alinha a imagem e o texto verticalmente no centro */
+}
+
+.pratica-img {
+    width: 200px; /* Tamanho fixo para a imagem */
+    height: 150px; /* Tamanho fixo para a imagem */
+    object-fit: cover; /* Para garantir que a imagem se ajuste ao tamanho sem distorcer */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+.pratica-info {
+    padding: 20px;
+    flex: 1; /* Faz o texto ocupar o restante do espaço */
+}
+
+.pratica-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.pratica-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Adicionando uma classe para alternar a ordem da imagem e do texto */
+.pratica-item.reverse {
+    flex-direction: row-reverse; /* Muda a ordem da imagem e do texto */
+}
+
+/* Estilo para o formulário de doação */
+.form-doacao {
+    background-color: #f0f8f0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-doacao h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-doacao form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-doacao label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2e7d32;
+}
+
+.form-doacao input[type="text"],
+.form-doacao input[type="email"],
+.form-doacao input[type="tel"],
+.form-doacao select,
+.form-doacao textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-doacao textarea {
+    resize: vertical;
+}
+
+.form-doacao input[type="submit"] {
+    background-color: #2e7d32;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.form-doacao input[type="submit"]:hover {
+    background-color: #1e5a23;
+}
+
+/* Lista de locais de oficinas */
+.locais-oficinas {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.locais-oficinas h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.locais-oficinas ul {
+    list-style: none;
+    padding: 0;
+}
+
+.locais-oficinas li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.locais-oficinas li:last-child {
+    border-bottom: none;
+}
+
+.locais-oficinas strong {
+    color: #2e7d32;
+}
+
+/* Responsividade para a lista de práticas */
+@media (max-width: 768px) {
+    .pratica-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pratica-img {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .pratica-info h3 {
+        font-size: 1.3rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .pratica-info p {
+        font-size: 0.9rem;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #2e7d32;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

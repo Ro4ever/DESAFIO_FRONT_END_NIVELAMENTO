@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos de Reaproveitamento</title>
+    <link rel="stylesheet" href="css/styles_praticas.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                ☰
+            </div>
+            <ul id="nav-menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="praticas.html" class="active">Projetos de Reaproveitamento</a></li>
+                <li><a href="doacoes.html">Doações e Oficinas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+    
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+    </script>
+
+    <section class="hero-praticas">
+        <h1>Projetos de Reaproveitamento de Eletrônicos</h1>
+        <p>Descubra novas formas criativas de dar vida a eletrônicos antigos e reduzir o lixo eletrônico.</p>
+    </section>
+
+    <section class="praticas-list">
+        <div class="pratica-item">
+            <img src="imgs/luminaria_reciclada.jpg" alt="Luminária de Peças Recicladas" class="pratica-img">
+            <div class="pratica-info">
+                <h3>Relato de Bruno: Luminárias feitas com Peças Eletrônicas</h3>
+                <p>"Comecei a reaproveitar placas-mãe e cabos antigos para criar luminárias decorativas. Além de ser uma forma criativa de evitar o descarte desses materiais, consegui transformar lixo eletrônico em arte funcional para minha casa e de amigos."</p>
+                <p><strong>Bruno, 38 anos, Salvador</strong></p>
+            </div>
+        </div>
+
+        <div class="pratica-item reverse">
+            <img src="imgs/jardim_tecnologico.jpg" alt="Jardim Tecnológico" class="pratica-img">
+            <div class="pratica-info">
+                <h3>Relato de Helena: Jardins Tecnológicos</h3>
+                <p>"Transformei carcaças de CPUs e outros eletrônicos antigos em vasos para plantas. O resultado foi um jardim tecnológico incrível e sustentável, que une natureza e tecnologia de forma harmônica."</p>
+                <p><strong>Helena, 45 anos, Florianópolis</strong></p>
+            </div>
+        </div>
+
+        <div class="pratica-item">
+            <img src="imgs/arte_eletronica.jpg" alt="Esculturas Eletrônicas" class="pratica-img">
+            <div class="pratica-info">
+                <h3>Relato de Pedro: Arte com Lixo Eletrônico</h3>
+                <p>"Uso peças eletrônicas descartadas para criar esculturas artísticas. Circuitos antigos, fios e até teclados quebrados ganham nova vida em obras que chamam atenção para o impacto do lixo eletrônico no meio ambiente."</p>
+                <p><strong>Pedro, 50 anos, Brasília</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Projetos de Reaproveitamento de Eletrônicos</p>
+    </footer>
+</body>
+</html>
