@@ -48,7 +48,7 @@
                 <input type="email" id="email" name="email" required><br><br>
 
                 <label for="telefone">Telefone:</label><br>
-                <input type="tel" id="telefone" name="telefone" required><br><br>
+                <input type="tel" id="telefone" name="telefone" required oninput="formatarTelefone(this)"><br><br>
 
                 <label for="endereco">Endereço para Coleta:</label><br>
                 <input type="text" id="endereco" name="endereco" required><br><br>
@@ -94,7 +94,6 @@
                 <li><strong>EcoLab Criativo</strong> – Rua das Andorinhas, 678 - Maceió, AL</li>
                 <li><strong>Recicla Conserta</strong> – Av. Marechal, 999 - Natal, RN</li>
                 <li><strong>Estação Reuso Tech</strong> – Rua do Sol, 112 - Campo Grande, MS</li>
-                
             </ul>
         </section>
 
@@ -104,17 +103,25 @@
         <p>&copy; 2025 Doações e Oficinas de Reaproveitamento</p>
     </footer>
 
-    <!-- Script para o popup -->
     <script>
+        function formatarTelefone(campo) {
+            let numero = campo.value.replace(/\D/g, "");
+
+            if (numero.length > 10) {
+                campo.value = `(${numero.slice(0, 2)}) ${numero.slice(2, 7)}-${numero.slice(7, 11)}`;
+            } else if (numero.length > 5) {
+                campo.value = `(${numero.slice(0, 2)}) ${numero.slice(2, 6)}-${numero.slice(6, 10)}`;
+            } else if (numero.length > 2) {
+                campo.value = `(${numero.slice(0, 2)}) ${numero.slice(2)}`;
+            }
+        }
+
         function mostrarPopup(event) {
-            event.preventDefault(); // Impede o envio real do formulário
-
-            // Exibe o popup de confirmação
+            event.preventDefault(); 
             alert("Obrigado! Sua doação foi enviada com sucesso.");
-
-            // Limpa os campos do formulário após o envio
             document.querySelector('form').reset();
         }
     </script>
+
 </body>
 </html>
