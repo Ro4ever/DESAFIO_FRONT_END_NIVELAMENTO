@@ -26,12 +26,14 @@ Tecnologias Utilizadas
 - **Git/GitHub** → Versionamento do código
 
 Como Clonar o Repositório?
-1. Clone este repositório no seu computador:  
+1. Clone este repositório no seu computador:
    git clone https://github.com/Ro4ever/seu-repositorio.git
 
-2. Entre na pasta do projeto:
+3. Entre na pasta do projeto:
+
    cd projeto-reciclagem
 
-3. Abra o arquivo index.html no navegador
+4. Abra o arquivo index.html no navegador
+
    start index.html  # Windows  
    open index.html   # macOS  
