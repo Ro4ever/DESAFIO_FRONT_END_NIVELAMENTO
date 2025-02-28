@@ -27,6 +27,7 @@ Tecnologias Utilizadas
 
 Como Clonar o Repositório?
 1. Clone este repositório no seu computador:
+
    git clone https://github.com/Ro4ever/seu-repositorio.git
 
 3. Entre na pasta do projeto:
