@@ -28,7 +28,7 @@ Tecnologias Utilizadas
 Como Clonar o Repositório?
 1. Clone este repositório no seu computador:
 
-   git clone https://github.com/Ro4ever/seu-repositorio.git
+   git clone https://github.com/Ro4ever/DESAFIO_FRONT_END_NIVELAMENTO.git
 
 3. Entre na pasta do projeto:
 
